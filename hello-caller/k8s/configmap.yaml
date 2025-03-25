@@ -8,4 +8,11 @@ data:
   HELLO_SERVICE_URL: "http://hello-service:8080"
   MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,info"
   MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
-  MANAGEMENT_ENDPOINT_HEALTH_SHOW_DETAILS: "always" 
+  MANAGEMENT_ENDPOINT_HEALTH_SHOW_DETAILS: "always"
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: docker-config
+data:
+  DOCKERHUB_USERNAME: "datfan06"  

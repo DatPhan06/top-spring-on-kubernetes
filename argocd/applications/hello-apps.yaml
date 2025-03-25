@@ -8,10 +8,7 @@ spec:
   source:
     repoURL: https://github.com/DatPhan06/top-spring-on-kubernetes.git
     targetRevision: HEAD
-    path: helm/hello-apps
-    helm:
-      valueFiles:
-      - values.yaml
+    path: k8s
   destination:
     server: https://kubernetes.default.svc
     namespace: default
