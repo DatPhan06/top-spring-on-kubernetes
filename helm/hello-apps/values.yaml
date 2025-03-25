@@ -3,8 +3,9 @@ dockerHubUsername: datphan06
 helloSpringK8s:
   name: hello-spring-k8s
   image:
-    repository: ${DOCKERHUB_USERNAME}/hello-spring-k8s
+    repository: datphan06/hello-spring-k8s
     tag: latest
+    pullPolicy: Always
   resources:
     requests:
       memory: "512Mi"
@@ -16,8 +17,9 @@ helloSpringK8s:
 helloCaller:
   name: hello-caller
   image:
-    repository: ${DOCKERHUB_USERNAME}/hello-caller
+    repository: datphan06/hello-caller
     tag: latest
+    pullPolicy: Always
   resources:
     requests:
       memory: "512Mi"

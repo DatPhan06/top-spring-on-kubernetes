@@ -16,6 +16,7 @@ spec:
       containers:
       - name: {{ .Values.helloSpringK8s.name }}
         image: {{ .Values.helloSpringK8s.image.repository }}:{{ .Values.helloSpringK8s.image.tag }}
+        imagePullPolicy: {{ .Values.helloSpringK8s.image.pullPolicy }}
         ports:
         - containerPort: 8080
         envFrom:
