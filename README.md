@@ -90,7 +90,7 @@ kubectl port-forward svc/hello-caller 8080:8080
 
 Sau đó truy cập: http://localhost:8080/call-hello
 
-## Demo
+## Demo Docker & K8S
 
 ### 1. Build Docker Image
 ![Docker Build Result](hello-caller/src/main/resources/img/DockerBuildResult.png)
@@ -100,6 +100,22 @@ Sau đó truy cập: http://localhost:8080/call-hello
 
 ### 3. Kết quả chạy ứng dụng
 ![Kubeclt Hello World](hello-caller/src/main/resources/img/KubecltHelloWorld.png)
+
+## Demo CI/CD
+
+### 1. Github Action CI:
+![Github Action CI](hello-caller/src/main/resources/img/githubActionCI.png)
+
+### 2. All Github Action CI version:
+![Github Action CI Version](hello-caller/src/main/resources/img/AllCIGithubAction.png)
+
+### 3. CD in ArgoCD:
+![Github Action CI Version](hello-caller/src/main/resources/img/ArgoCD.png)
+
+### 4. Test Health:
+![Health Check](hello-caller/src/main/resources/img/HealthCheck.png)
+
+
 
 ## API Endpoints
 
