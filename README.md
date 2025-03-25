@@ -104,16 +104,16 @@ Sau đó truy cập: http://localhost:8080/call-hello
 ## Demo CI/CD
 
 ### 1. Github Action CI:
-![Github Action CI](hello-caller/src/main/resources/img/githubActionCI.png)
+![Github Action CI](img/githubActionCI.png)
 
 ### 2. All Github Action CI version:
-![Github Action CI Version](hello-caller/src/main/resources/img/AllCIGithubAction.png)
+![Github Action CI Version](img/AllCIGithubAction.png)
 
 ### 3. CD in ArgoCD:
-![Github Action CI Version](hello-caller/src/main/resources/img/ArgoCD.png)
+![Github Action CI Version](img/ArgoCD.png)
 
 ### 4. Test Health:
-![Health Check](hello-caller/src/main/resources/img/HealthCheck.png)
+![Health Check](img/HealthCheck.png)
 
 
 
