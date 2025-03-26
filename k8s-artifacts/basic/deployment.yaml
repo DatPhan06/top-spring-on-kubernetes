@@ -19,7 +19,6 @@ spec:
     spec:
       containers:
       - image: datfan06/hello-caller:latest
-        imagePullPolicy: Never
         name: hello-spring-k8s
         resources: {}
 status: {}
