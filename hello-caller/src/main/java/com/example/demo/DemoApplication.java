@@ -2,9 +2,7 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 
 @SpringBootApplication
@@ -17,12 +15,22 @@ public class DemoApplication {
 
 	@GetMapping("/")
 	public ResponseEntity<String> index() {
-		return ResponseEntity.ok("Hello World from root endpoint");
+		return ResponseEntity.ok("Hello World - API đang hoạt động!");
 	}
 
-	@GetMapping("/test")
-	public ResponseEntity<String> test() {
-		return ResponseEntity.ok("Hello World from test endpoint");
+	@GetMapping("/ping")
+	public ResponseEntity<String> ping() {
+		return ResponseEntity.ok("Pong! Server đang chạy");
+	}
+
+	@GetMapping("/time")
+	public ResponseEntity<String> getTime() {
+		return ResponseEntity.ok("Thời gian hiện tại: " + System.currentTimeMillis());
+	}
+
+	@GetMapping("/health")
+	public ResponseEntity<String> health() {
+		return ResponseEntity.ok("Server khỏe mạnh!");
 	}
 
 	@ExceptionHandler(Exception.class)
