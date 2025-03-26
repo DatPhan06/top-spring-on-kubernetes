@@ -18,7 +18,7 @@ spec:
         app: gs-spring-boot-k8s
     spec:
       containers:
-      - image: spring-k8s/hello-spring-k8s
+      - image: datfan06/hello-spring-k8s:latest
         imagePullPolicy: Never
         name: hello-spring-k8s
         resources: {}
